@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="'author" content="Juan Edgardo Figueroa">
+  <meta name="'description" content="Los mejores pasteles para celebar tu momento especial. Preparados con ingredientes de la mas alta calidad.">
+  <title>Pastelandia ¡El reino del sabor!</title>
+  <link rel="icon" href="PastelandiaLogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Pastelería PASTELANDIA</h1>
+    <nav>   
+      <ul class="nav"> 
+        <li><a href="../index.html">Inicio</a></li>
+      </ul>
+    </nav>
+    <a href="../index.html"><img src="/img/PastelandiaLogo.png" alt="Pastelandia" width="150" height="150"></a>
+  </header>
+  <main>
+    <section>
+      <h2>Elige tu pastel</h2>
+      <form action="./compra.html" id="formPedido" method="get">
+        <fieldset>
+          <legend>Elige su sabor</legend>
+          <p>
+            <input type="checkbox" name="sabores" id="vainilla" value="vainilla">
+            <label for="vainilla">Vainilla</label> - $190
+          </p>
+          <p>
+            <input type="checkbox" name="sabores" id="chocolate" value="chocolate">
+            <label for="chocolate">Chocolate</label> - $200
+          </p>
+          <p>
+            <input type="checkbox" name="sabores" id="red" value="red">
+            <label for="red">Red Velvet</label> - $210
+          </p>
+          <p>
+            <input type="checkbox" name="sabores" id="zanahoria" value="zanahoria">
+            <label for="zanahoria">Zanahoria</label> - $220
+          </p>
+          <p>
+            <label for="relleno">Relleno:</label>
+            <select name="relleno" id="relleno">
+              <option value="fresa" selected>Fresa</option>
+              <option value="cajeta">Cajeta</option>
+              <option value="oreo">Oreo(+$20)</option>
+              <option value="frambuesa">Hershey's(+$30)</option>
+            </select>
+          </p>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Elige los adornos</legend>
+          <p>
+            <input type="checkbox" name="adornos" id="adorno1" value="adorno1">
+            <label for="adorno1">Adorno 1</label> - $10
+          </p>
+          <p>
+            <input type="checkbox" name="adornos" id="adorno2" value="adorno2">
+            <label for="adorno2">Adorno 2</label> - $11
+          </p>
+          <p>
+            <input type="checkbox" name="adornos" id="adorno3" value="adorno3">
+            <label for="adorno3">Adorno 3</label> - $12
+          </p>
+          <p>
+            <input type="checkbox" name="adornos" id="adorno4" value="adorno4">
+            <label for="adorno4">Adorno 4</label> - $9
+          </p>
+          <p>
+            <input type="checkbox" name="adornos" id="adorno5" value="adorno5">
+            <label for="adorno5">Adorno 5</label> - $8
+          </p>
+          <p>Quiere escribir un mensaje en el pastel?</p>
+          <p>
+            <input type="radio" name="mensajeopt" id="mensaje_si" value="mensaje_si">
+            <label for="mensaje_si">Si</label>
+          </p>
+          <p>
+            <input type="radio" name="mensajeopt" id="mensaje_no" value="mensaje_no">
+            <label for="mensaje_no">No</label>
+          </p>
+          <p class="mensaje">
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" cols="50" rows="4" placeholder="Escribe el mensaje o nombre que quieres que tenga tu pastel"></textarea>
+          </p>
+        </fieldset>
+        <p>
+          <input type="reset">
+          <input type="submit" value="Ordenar">
+        </p>
+      </form>
+    </section>
+  </main>
+  <hr>
+  <footer>
+    © 2022 Pasteleria PASTELANDIA
+  </footer>
+</body>
+</html>
